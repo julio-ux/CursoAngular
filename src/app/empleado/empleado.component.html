@@ -1,1 +1,10 @@
-<p>Aquí iría un empleado</p>
+<!-- <p>Aquí iría un empleado</p>
+<p>La suma de 1 + 1 es: {{ 1 + 1 }}</p> -->
+
+<input #edadTrabajador placeholder="Edad Trabajador" />
+<button (click)="callPhone(edadTrabajador.value)">Cambiar Mensaje</button>
+
+<p>Nombre del empleado: {{ nombre }}</p>
+<p>Apellido del empleado: {{ apellido }}</p>
+<p>Edad del empleado: {{ edad < 18 ? "Menor de edad" : "Mayor de edad" }} años</p>
+<p>Empresa del empleado: {{ empresa }}</p>

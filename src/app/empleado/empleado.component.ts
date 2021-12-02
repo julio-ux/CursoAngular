@@ -9,8 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmpleadoComponent implements OnInit {
 
+  nombre = "Julio";
+  apellido = "Castillo";
+  edad = 5;
+  // private edad = 29;
+  empresa = "Aspire Systems";
+  // getEdad(): number{
+  //   return this.edad;
+  // }
+  callPhone(edad: string): void{
+      this.edad = parseInt(edad);
+  }
   constructor() { }
-
   ngOnInit(): void {
   }
 
