@@ -1,3 +1,29 @@
 /*p{
     background-color: red;
 }*/
+.cajaFormulario{
+    background-color: #4b7bbd;
+    display: inline-block;
+}
+.inputClass{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: black;
+}
+.buttonClass{
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: #ffffff;
+    background-color: #4ab533;
+    border: none;
+}

@@ -1,10 +1,13 @@
 <!-- <p>Aquí iría un empleado</p>
 <p>La suma de 1 + 1 es: {{ 1 + 1 }}</p> -->
-
-<input #edadTrabajador placeholder="Edad Trabajador" />
-<button (click)="callPhone(edadTrabajador.value)">Cambiar Mensaje</button>
-
+<div class="cajaFormulario">
+    <!-- <input #nombreTrabajador class="inputClass" placeholder="Nombre del trabajador" />
+    <input #apellidoTrabajador class="inputClass"  placeholder="Apellido del trabajador" />
+    <input #edadTrabajador class="inputClass"  placeholder="Edad Trabajador" /> -->
+    <input #empresaTrabajador (keyup)="0" class="inputClass"  placeholder="Empresa del trabajador" />
+    <!-- <button class="buttonClass" (click)="llamarEmpresa(empresaTrabajador.value)">Cambiar Empresa</button> -->
+</div>
 <p>Nombre del empleado: {{ nombre }}</p>
 <p>Apellido del empleado: {{ apellido }}</p>
-<p>Edad del empleado: {{ edad < 18 ? "Menor de edad" : "Mayor de edad" }} años</p>
-<p>Empresa del empleado: {{ empresa }}</p>
+<p>Edad del empleado: {{ edad < 18 ? "Menor de edad" : "Mayor de edad" }}</p>
+<p>Empresa del empleado: {{ empresaTrabajador.value }}</p>

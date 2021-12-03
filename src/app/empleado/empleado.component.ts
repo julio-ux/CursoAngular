@@ -13,12 +13,20 @@ export class EmpleadoComponent implements OnInit {
   apellido = "Castillo";
   edad = 5;
   // private edad = 29;
-  empresa = "Aspire Systems";
+  // empresa = "Aspire Systems";
   // getEdad(): number{
   //   return this.edad;
   // }
-  callPhone(edad: string): void{
-      this.edad = parseInt(edad);
+
+  // callPhone(nombre : string, apellido : string, edad: string, empresa: string): void{
+  //     this.nombre = nombre;
+  //     this.apellido = apellido;
+  //     this.edad = parseInt(edad);
+  //     // this.empresa = empresa;
+  // }
+
+  llamarEmpresa(empresa: string): void{
+
   }
   constructor() { }
   ngOnInit(): void {
