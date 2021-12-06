@@ -12,6 +12,12 @@ export class EmpleadoComponent implements OnInit {
   nombre = "Julio";
   apellido = "Castillo";
   edad = 5;
+  habilitacionCuadro = true;
+
+  usuRegistrado = false;
+  getRegistroUsuario(){
+    this.usuRegistrado = false;
+  }
   // private edad = 29;
   // empresa = "Aspire Systems";
   // getEdad(): number{
