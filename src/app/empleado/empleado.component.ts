@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Event } from '@angular/router';
+import { AnyCatcher } from 'rxjs/internal/AnyCatcher';
 
 @Component({
   selector: 'app-empleado',
@@ -12,11 +14,23 @@ export class EmpleadoComponent implements OnInit {
   nombre = "Julio";
   apellido = "Castillo";
   edad = 5;
-  habilitacionCuadro = true;
+  habilitacionCuadro = false;
 
   usuRegistrado = false;
+  Textoregistrado = "No hay nadie registrado";
+  setTextoRegistrado(event: any){
+    if((<HTMLInputElement>event.target).value == "si"){
+      this.Textoregistrado = "Se ha registrado el usuario";
+    }else{
+      this.Textoregistrado = "No hay nadie registrado";
+    }
+    
+  }
   getRegistroUsuario(){
     this.usuRegistrado = false;
+  }
+  setusuarioRegistrado(){
+    alert("Se ha registrado un usuario");
   }
   // private edad = 29;
   // empresa = "Aspire Systems";

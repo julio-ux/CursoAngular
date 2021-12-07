@@ -15,6 +15,11 @@
 Introduce la empresa:<input #empresaTrabajador (keyup)="0" placeholder="Empresa del trabajador" [disabled] = "habilitacionCuadro">
 <br/>
 <br/>
-Registrado: <input type="checkbox" id="registro" [checked]="usuRegistrado"/>
+{{ Textoregistrado }}
+<br/>
+<!-- Registrado: <input type="checkbox" id="registro" [checked]="usuRegistrado" (click)="setTextoRegistrado()" /> -->
+Registrado: <input type="radio" id="registrado" name="usuarioRegistrado" value="si" (click)="setTextoRegistrado($event)">
+<br/>
+No registrado: <input type="radio" id="no_registrado" name="usuarioRegistrado" value="no" (click)="setTextoRegistrado($event)">
 
 {{getRegistroUsuario()}}
