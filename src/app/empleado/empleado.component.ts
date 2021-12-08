@@ -33,7 +33,7 @@ export class EmpleadoComponent implements OnInit {
     alert("Se ha registrado un usuario");
   }
   // private edad = 29;
-  // empresa = "Aspire Systems";
+  empresaTrabajador = "Google";
   // getEdad(): number{
   //   return this.edad;
   // }
@@ -48,6 +48,10 @@ export class EmpleadoComponent implements OnInit {
   llamarEmpresa(empresa: string): void{
 
   }
+  // cambiaEmpresa(evento: any): void{
+  //   this.empresaTrabajador = (<HTMLInputElement>evento.target).value;
+  // }
+
   constructor() { }
   ngOnInit(): void {
   }
